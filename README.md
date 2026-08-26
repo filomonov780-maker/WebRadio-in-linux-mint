@@ -49,5 +49,8 @@ ssh -R 80:127.0.0.1:8000 nokey@localhost.run
 * Ироглефы бяо дзы
 
 ```
-
+sudo apt update
+sudo apt install pavucontrol
+sudo apt install butt
+sudo apt install clementine
 ```
