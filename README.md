@@ -1,7 +1,7 @@
-# Мобильный Радио-Эфир
+#  Мобильный Радио-Эфир
 
 > ** ПРЯМОЙ ЭФИР**  
-> Ссылка на поток: [https://19fdf0b160f5bc.lhr.life/stream](https://19fdf0b160f5bc.lhr.life/stream)
+> Ссылка на поток: https://19fdf0b160f5bc.lhr.life/stream
 
 ---
 
@@ -15,33 +15,38 @@ sudo chown $USER:$USER ~/icecast.xml
 sed -i 's|/var/log/icecast2|/home/$USER|g' ~/icecast.xml
 icecast2 -c ~/icecast.xml
 
-Шаг 2. Настройка butt и Clementine
+```
 
-    Включите музыку в плеере Clementine.
+### Шаг 2. Настройка butt и Clementine
 
-    В butt укажите параметры:
+1. Включите музыку в плеере **Clementine**.
+2. В **butt** укажите параметры:
+* **Server:** `127.0.0.1:8000`
+* **Mountpoint:** `/stream`
+* **Password:** `hackme`
 
-        Server: 127.0.0.1:8000
 
-        Mountpoint: /stream
+3. Нажмите **Play** в butt для старта эфира.
 
-        Password: hackme
-
-    Нажмите Play в butt для старта эфира.
-
-Шаг 3. Проброс туннеля в сеть
+### Шаг 3. Проброс туннеля в сеть
 
 Запустите команду в терминале:
+
+```bash
 ssh -R 80:127.0.0.1:8000 nokey@localhost.run
 
- Команда проекта
+```
 
-    Артём Удмуртия
+---
 
-    Сергей Некто
+## 👥 Команда проекта
 
-    Иван Минутов (ИвМи)
+* Артём Удмуртия
+* Сергей Некто
+* Иван Минутов (ИвМи)
+* Ева Сырова
+* Ироглефы бяо дзы
 
-    Ева Сырова
+```
 
-    Ироглефы бяо дзы
+```
