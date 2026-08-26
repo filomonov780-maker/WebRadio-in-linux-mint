@@ -41,6 +41,11 @@ ssh -R 80:127.0.0.1:8000 nokey@localhost.run
 ```
 
 ---
+итог
+
+<img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/2c9325b1-3e0d-4209-9d90-581f55cc9f4d" />
+
+
 
 ## 👥 Команда проекта
 
