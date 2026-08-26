@@ -1,17 +1,28 @@
 
-# Радио-Эфир
 
-все что надо скачать в конце!!!!!
+```markdown
+# 📻 Мобильный Радио-Эфир
 
 > **🔴 ПРЯМОЙ ЭФИР**  
-> Ссылка на поток: [https://49cd0c2a183322.lhr.life/stream](https://49cd0c2a183322.lhr.life/stream)
+> Ссылка на поток: [https://a548b766daa97f.lhr.life/stream](https://a548b766daa97f.lhr.life/stream)
 
 ---
 
 ## 🛠️ Инструкция по запуску
 
-### Шаг 1. Настройка Icecast
+### Шаг 1. Установка софта
+```bash
+sudo apt update
+sudo apt install pavucontrol butt clementine icecast2 ssh
+
+```
+<img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/a1d4ee0f-4720-4c0a-9c89-02f0dd9102c7" />
+это для галочки
+
+### Шаг 2. Настройка Icecast
+
 Скопируйте конфиг и запустите сервер:
+
 ```bash
 sudo cp /etc/icecast2/icecast.xml ~/icecast.xml
 sudo chown $USER:$USER ~/icecast.xml
@@ -20,18 +31,19 @@ icecast2 -c ~/icecast.xml
 
 ```
 
-### Шаг 2. Настройка butt и Clementine
+### Шаг 3. Настройка butt и Clementine
 
 1. Включите музыку в плеере **Clementine**.
 2. В **butt** укажите параметры:
 * **Server:** `127.0.0.1:8000`
 * **Mountpoint:** `/stream`
 * **Password:** `hackme`
+<img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/d103bf25-8528-48f8-9d5c-ef7490d8c171" />
 
 
 3. Нажмите **Play** в butt для старта эфира.
 
-### Шаг 3. Проброс туннеля в сеть
+### Шаг 4. Проброс туннеля в сеть
 
 Запустите команду в терминале:
 
@@ -39,13 +51,9 @@ icecast2 -c ~/icecast.xml
 ssh -R 80:127.0.0.1:8000 nokey@localhost.run
 
 ```
+<img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/d950c5da-eee4-40a4-a9a5-da6e94f19714" />
 
 ---
-итог
-
-<img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/2c9325b1-3e0d-4209-9d90-581f55cc9f4d" />
-
-
 
 ## 👥 Команда проекта
 
@@ -56,10 +64,5 @@ ssh -R 80:127.0.0.1:8000 nokey@localhost.run
 * Ироглефы бяо дзы
 
 ```
-sudo apt update
-sudo apt install pavucontrol
-sudo apt install butt
-sudo apt install clementine
-sudo apt install icecast2
-sudo apt install ssh
+
 ```
