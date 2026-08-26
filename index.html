@@ -96,6 +96,39 @@
             border-radius: 0 6px 6px 0;
             font-size: 10.5pt;
         }
+        .promo-box {
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            color: #ffffff;
+            padding: 18px 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .promo-box h3 {
+            margin: 0 0 8px 0;
+            font-size: 15pt;
+            color: #f1c40f;
+        }
+        .promo-box p {
+            margin: 0 0 12px 0;
+            font-size: 11pt;
+        }
+        .credits {
+            margin-top: 15px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            font-size: 9.5pt;
+            opacity: 0.95;
+            text-align: left;
+        }
+        .credits ul {
+            margin: 5px 0 0 0;
+            padding-left: 15px;
+        }
+        .credits li {
+            margin-bottom: 3px;
+        }
     </style>
 </head>
 <body>
@@ -131,7 +164,7 @@ icecast2 -c ~/icecast.xml</pre>
             <li>Нажмите кнопку <strong>Play</strong> в butt для коннекта, а затем запустите воспроизведение музыки в Clementine.</li>
         </ul>
         <div class="example-box">
-            <strong>Пример эфира:</strong> Запускаем в Clementine трек группы «Красная Плесень», а слушается это всё на вашем личной радиоволне в реальном времени со всеми тегами и метаданными!
+            <strong>Пример эфира:</strong> Запускаем в Clementine трек группы «Красная Плесень», а слушается это всё в реальном времени со всеми тегами и метаданными!
         </div>
     </div>
 
@@ -140,6 +173,22 @@ icecast2 -c ~/icecast.xml</pre>
         <p>Чтобы поток был доступен по всему миру, откройте новый терминал и поднимите туннель:</p>
         <pre>ssh -R 80:127.0.0.1:8000 nokey@localhost.run</pre>
         <div class="note">Скопируйте полученную ссылку (например, <span style="font-family: monospace;">https://xxxxx.lhr.life</span>) — и ваше собственное интернет-радио готово к вещанию!</div>
+    </div>
+
+    <div class="promo-box">
+        <h3>🎙️ Авторская радиоволна от Августа!</h3>
+        <p>Инструкция подготовлена специально для запуска крутых ламповых эфиров, круглосуточного рока, панк-рока и угарных треков. Залетай на волну и слушай качественный звук!</p>
+        
+        <div class="credits">
+            <strong>Над проектом и эфиром работали:</strong>
+            <ul>
+                <li>Артём Удмуртия</li>
+                <li>Сергей Некто</li>
+                <li>Иван Минутов (он же ИвМи)</li>
+                <li>Ева Сырова</li>
+                <li>Ироглефы бяо дзы</li>
+            </ul>
+        </div>
     </div>
 
 </body>
