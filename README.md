@@ -1,10 +1,9 @@
+Новый адрес туннеля: `[https://af1c86106204f8.lhr.life/stream](https://af1c86106204f8.lhr.life/stream)`
 
-
-```markdown
-# 📻 Мобильный Радио-Эфир
+#  Радио-Эфир
 
 > **🔴 ПРЯМОЙ ЭФИР**  
-> Ссылка на поток: [https://a548b766daa97f.lhr.life/stream](https://a548b766daa97f.lhr.life/stream)
+> Ссылка на поток: [https://af1c86106204f8.lhr.life/stream](https://af1c86106204f8.lhr.life/stream)
 
 ---
 
@@ -16,8 +15,6 @@ sudo apt update
 sudo apt install pavucontrol butt clementine icecast2 ssh
 
 ```
-<img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/a1d4ee0f-4720-4c0a-9c89-02f0dd9102c7" />
-это для галочки
 
 ### Шаг 2. Настройка Icecast
 
@@ -38,10 +35,10 @@ icecast2 -c ~/icecast.xml
 * **Server:** `127.0.0.1:8000`
 * **Mountpoint:** `/stream`
 * **Password:** `hackme`
-<img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/d103bf25-8528-48f8-9d5c-ef7490d8c171" />
 
 
 3. Нажмите **Play** в butt для старта эфира.
+<img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/0b3b0228-8e59-42e7-8b08-b5b990bf2f99" />
 
 ### Шаг 4. Проброс туннеля в сеть
 
@@ -51,7 +48,7 @@ icecast2 -c ~/icecast.xml
 ssh -R 80:127.0.0.1:8000 nokey@localhost.run
 
 ```
-<img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/d950c5da-eee4-40a4-a9a5-da6e94f19714" />
+<img width="1920" height="1080" alt="изображение" src="https://github.com/user-attachments/assets/b5556c9a-6cf4-4b76-8d9a-8a2e542a3103" />
 
 ---
 
