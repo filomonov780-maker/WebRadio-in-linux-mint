@@ -1,6 +1,8 @@
 
 # Радио-Эфир
 
+все что надо скачать в конце!!!!!
+
 > **🔴 ПРЯМОЙ ЭФИР**  
 > Ссылка на поток: [https://49cd0c2a183322.lhr.life/stream](https://49cd0c2a183322.lhr.life/stream)
 
@@ -53,4 +55,6 @@ sudo apt update
 sudo apt install pavucontrol
 sudo apt install butt
 sudo apt install clementine
+sudo apt install icecast2
+sudo apt install ssh
 ```
